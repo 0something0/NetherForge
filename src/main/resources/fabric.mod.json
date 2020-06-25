@@ -1,37 +1,39 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "netherforge",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Forge ... Netherforge",
+  "description": "Forge for 1.16... but this isn't the modloader, though that was the inspiration. Netherforge adds in an expensive method to anvil items without using EXP.",
   "authors": [
-    "Me!"
+    "0something0"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "All Rights Reserved",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.something0.netherforge.NetherForge"
+    ],
+    "client": [
+      "com.something0.netherforge.NetherForgeClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.15.x"
+    "minecraft": "1.16.x"
   },
   "suggests": {
-    "flamingo": "*"
+    "forge": "*"
   }
 }
